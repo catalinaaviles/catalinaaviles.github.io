@@ -1,0 +1,39 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex; /* Usa un modelo de caja flexible para alinear los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    background-color: #333; /* Color de fondo de la barra de navegación */
+    padding: 10px; /* Espacio de relleno dentro de la barra de navegación */
+}
+
+/* Estilos para el título de la barra de navegación */
+.navbar-title h1 {
+    margin: 0; /* Elimina el margen predeterminado del título */
+    color: #fff; /* Color del texto del título */
+}
+
+.navbar ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen exterior */
+    padding: 0; /* Elimina el relleno de la lista */
+    display: flex; /* Usa un modelo de caja flexible para los elementos de lista */
+}
+
+.navbar ul li {
+    margin-left: 20px; /* Espacio entre los elementos de lista */
+}
+
+.navbar ul li a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+/* Estilos para los estados de los enlaces */
+.navbar ul li a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón sobre él */
+}
+
+.navbar ul li a.active {
+    font-weight: bold; /* Resalta el enlace activo */
+}
