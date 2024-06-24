@@ -3,54 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Catalina Avilés</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portafolio Catalina Avilés</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: right;
+        }
+        header a {
+            margin: 0 15px;
+            color: #d97d1c;
+            text-decoration: none;
+        }
+        .container {
+            padding: 50px;
+        }
+        .title {
+            font-size: 48px;
+            color: #d97d1c;
+        }
+        .subtitle {
+            font-size: 24px;
+            color: #d97d1c;
+        }
+        .about, .skills {
+            margin-top: 50px;
+        }
+        .about p, .skills p {
+            font-size: 18px;
+            color: #333;
+        }
+        .skills-bar {
+            width: 100%;
+            background-color: #f1f1f1;
+            margin: 10px 0;
+        }
+        .skills-bar div {
+            width: 0;
+            height: 24px;
+            background-color: #d97d1c;
+            text-align: right;
+            padding-right: 10px;
+            line-height: 24px;
+            color: white;
+        }
+        .skills-bar .illustrator { width: 90%; }
+        .skills-bar .photoshop { width: 85%; }
+        .skills-bar .indesign { width: 75%; }
+        .skills-bar .aftereffects { width: 70%; }
+        .skills-bar .figma { width: 80%; }
+        .image {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .image img {
+            width: 50%;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <div class="logo">DISEÑO</div>
-        </nav>
+        <a href="#">Inicio</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Contacto</a>
+        <a href="#">Diseño</a>
     </header>
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>PORTAFOLIO</h1>
-                <h2>Catalina Avilés</h2>
-                <div class="scroll-down">
-                    <span>Desliza abajo</span>
-                    <span>↓</span>
-                </div>
-            </div>
-            <div class="hero-image"></div>
-        </section>
-        <section class="skills">
-            <div class="software-skills">
-                <h3>Manejo de Software</h3>
-                <div class="skills-icons">
-                    <div class="skill"></div>
-                    <div class="skill"></div>
-                    <div class="skill"></div>
-                    <div class="skill"></div>
-                    <div class="skill"></div>
-                </div>
-            </div>
-            <div class="future-goals">
-                <p>A futuro, me gustaría desenvolverme en la investigación y desarrollo de nuevas alternativas en base a la experiencia de usuario.</p>
-            </div>
-        </section>
-        <section class="about-me">
-            <h3>Sobre mí</h3>
-            <p>Alta capacidad de aprendizaje</p>
-            <p>Buen trabajo en equipo</p>
+    <div class="container">
+        <div class="title">PORTAFOLIO</div>
+        <div class="subtitle">CATALINA AVILÉS</div>
+        <div class="about">
+            <h2>SOBRE MI</h2>
+            <p><strong>Alta capacidad de aprendizaje</strong></p>
+            <p><strong>Buen trabajo en equipo</strong></p>
             <p>Soy una estudiante de Diseño Gráfico de la Universidad Diego Portales, cursando su cuarto año y actualmente tengo 22 años.</p>
             <p>Me considero una persona responsable, ordenada, que le gusta trabajar en equipo, la planificación orientada al aprendizaje y estar en constante experimentación.</p>
-        </section>
-    </main>
+        </div>
+        <div class="skills">
+            <h2>MANEJO DE SOFWARES</h2>
+            <div class="skills-bar">
+                <div class="illustrator">Illustrator</div>
+            </div>
+            <div class="skills-bar">
+                <div class="photoshop">Photoshop</div>
+            </div>
+            <div class="skills-bar">
+                <div class="indesign">InDesign</div>
+            </div>
+            <div class="skills-bar">
+                <div class="aftereffects">After Effects</div>
+            </div>
+            <div class="skills-bar">
+                <div class="figma">Figma</div>
+            </div>
+            <p>A futuro, me gustaría desenvolverme en la investigación y desarrollo de nuevas alternativas en base a la experiencia de usuario.</p>
+        </div>
+        <div class="image">
+            <img src="path/to/your/image.png" alt="Trabajando en un proyecto">
+        </div>
+    </div>
 </body>
 </html>
